@@ -1,13 +1,15 @@
 function reverse(){
-    let a = document.getElementById("input")
-    let text = "Hello World";
-    let reversedText = "";
-    
-    for (let i = text.length - 1; i >= 0; i--) {
-        reversedText += text[i];
-    }
-    
-    console.log(reversedText);
-    // Output: "dlroW olleH"
-    
+//    alert("hello")
+let a =document.getElementById("input")
+
+let val=a.value
+let reversed=""
+for(let i=val.length-1;i>=0;i--){
+reversed +=val[i]
+
+}
+document.getElementById("result").innerHTML=(reversed)
+
+console.log(reversed);
+return reversed
 }
