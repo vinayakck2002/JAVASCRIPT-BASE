@@ -11,7 +11,7 @@
 
 // ===============FOREACH===============================================================================
 
-const a = [1,2,3,4,5,6] 
+// const a = [1,2,3,4,5,6] 
 // a.forEach((item) =>console.log(item));
 // // console : 1 2 3 4 5 6 
 // ================MAP==============================================================================
@@ -51,4 +51,34 @@ const a = [1,2,3,4,5,6]
 // console.log(data);
 // // console : 5
 
+// =============APPLY==========================================================================
 
+// const person = {
+//     name:'john'
+// }
+// function data(job,com) {
+//     console.log(job,com,this.name);
+    
+    
+// }
+// data.apply(person,["developer","google"])
+// ===========CLASS METHOD================================================================================
+class Synnefo{
+    constructor(){
+    this.a=10
+    console.log('register');
+    
+    }
+    python(){
+        console.log('python')
+    }
+    mern(){
+        console.log('mern');
+        
+    }
+
+}
+manu = new Synnefo()
+manu.python()
+manu.mern()
+console.log(manu);

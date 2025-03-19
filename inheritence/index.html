@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // classical
+        class Synnefo{
+            constructor(){
+                this.a10
+                console.log('register');
+            }
+            python(){
+                console.log('python');
+            }
+            mern(){
+                console.log('mern');
+                
+            }
+        }
+
+        class Novavi extends Synnefo {
+            constructor() {
+                console.log('novavi register');
+                super()
+            }
+            dev(){
+                console.log('developer');
+            }
+
+        }
+
+        manu = new Synnefo()
+        manu.python()
+        manu.mern()
+        console.log(manu);
+
+        staff = new Novavi()
+        staff.dev()
+//    prototypal
+        const data ={
+            greet : function () {
+                console.log('welcome to all');
+            }
+
+        }
+        a1 = Object.create(data)
+        a1.greet()
+        console.log(a1);
+        
+
+        
+    </script>
+</body>
+</html>
