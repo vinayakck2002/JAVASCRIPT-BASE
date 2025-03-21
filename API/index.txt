@@ -1,0 +1,12 @@
+        SYNTAX
+-----------------------------------------------------        
+        async function fetData() {
+            try{
+                const resnpose = await fetch()
+                const product = await resnpose.json()
+                console.log('product',product);
+            }catch(error){
+
+            }
+        }
+        fetData()
